@@ -4,6 +4,7 @@
 
 
 
+
 :root{
     --mainTextColor-light:#000;
     --secondaryTextColor-light:rgb(51 51 51);
@@ -22,7 +23,6 @@
     --mainLinkColor:var(--mainLinkColor-dark);
     --mainBorderColor:var(--mainBorderColor-dark);
     --mainBgColor:var(--mainBgColor-dark);
-
 }
 
 body, html {
@@ -30,11 +30,12 @@ body, html {
     padding: 0;
     width: 100vw;
     height: 100vh;
+  
 }
 
 *{
     font-family: 'Readex Pro', sans-serif;
-    line-height: 1.5em;
+    line-height: 1em;
     box-sizing: border-box;
     color: var(--mainTextColor);
    
@@ -73,6 +74,7 @@ li{
 #wrapper--hero{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 4em;
 }
 
@@ -122,9 +124,10 @@ li{
 }
 
 #qualifications--list{
-    list-style: none;
-    
+    list-style: none;    
 }
+
+
 
 #wrapper--techstack__items{
     display: flex;
@@ -137,6 +140,12 @@ li{
     flex-wrap: wrap;
     gap: .5em;
     font-size: 0.9em;
+}
+
+#sands--list {
+    display: block; 
+    font-size: .9em;
+   
 }
 
 .card--techstack{
@@ -161,7 +170,6 @@ li{
 
 .card--project a{
     color: var(--mainTextColor);
-
     transition: 0.3s;
 }
 
@@ -181,9 +189,17 @@ li{
     background-color: var(--mainBorderColor);
     height: 5px;
 }
+.soft--skills {
+    
+    background-color: var(--mainLinkColor-light);
+    color: var(--mainBgColor-dark);
+    border-radius: 5px;
+    padding: 3px 5px 5px 5px;
+    align-items: center;
+    
+}
 
-
-@media(max-width:600px){
+@media(max-width: 600px){
 
     .section--page{
         padding-top: 1em;
@@ -199,9 +215,9 @@ li{
     }
     #profile-pic{
     width: 170px;
-    height: 170px;
-    
-    
+    height: 170px; 
+    object-fit: cover;
+    border-radius: 50%; 
 }
 
     
